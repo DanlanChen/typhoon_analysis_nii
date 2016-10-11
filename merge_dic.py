@@ -5,7 +5,7 @@ from collections import defaultdict
 # merge the h5 file in image directory with the metadata in track directory, 
 #step 1 : create two dictionaries with the same key, step2: merge the two dictory together
 
-rootdir='/fs9/danlan/typhoon/data/image'
+#rootdir='/fs9/danlan/typhoon/data/image'
 def get_image_dict(rootdir):
     #loop in the image directories, create dict1 key based on "time-typhoon_name", value is the 512*512 data array
     dict1 = defaultdict(list)
@@ -33,7 +33,7 @@ def get_image_dict(rootdir):
     return dict1
 
 
-rootdir2='/fs9/danlan/typhoon/data/track'
+#rootdir2='/fs9/danlan/typhoon/data/track'
 def get_dict2(rootdir2):
 # create the second dictionary from track directory
     dict2 = defaultdict()
